@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body, button, input, #myFile {
+    font-family: 'Onest', 'sans-serif';
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/static/spam.png);
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    
+
+}
+#description {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    word-wrap: break-word;
+    
+}
+.description-box {
+    background-color: rgb(153, 213, 238);
+    display: flex; 
+    flex-direction: column; 
+    width: 100%;  
+    padding: 20px;  
+    box-sizing: border-box; 
+    margin-bottom: 15px;    
+
+    
+}
+#encouragement{
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(76, 195, 255);
+    border-radius: 20px;
+    text-decoration: none;
+    align-self: center;
+    margin: 15px;
+    text-align: center;
+}
+
+#encouragement:hover{
+    background-color: rgb(63, 161, 209);
+}
+#option-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin: 15px;
+}
+.nav-links a:hover{
+    background-color: rgb(63, 161, 209);
+}
+
+#option-buttons button {
+    padding: 20px; 
+    border: 0px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    width: 100%;
+    font-size: 20px;
+}
+
+#option-buttons button:hover {
+    background-color: rgb(220, 207, 191);
+}
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(211, 226, 255);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;;
+    margin-top: 20px;
+}
+#spam-input {
+    width: 75%;
+    height: 200px;
+    border: 0px;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+#spam-input::placeholder{
+    color: rgb(171, 171, 171);
+    padding: 5px;
+}
+
+#check, #customFileButton, #upload {
+    background-color: rgb(159, 193, 255);
+    border: 0px;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+}
+
+#check:hover, #customFileButton:hover, #upload:hover {
+    background-color: rgb(128, 156, 208);
+    border: 0px;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+}
+
+
+#result {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+#results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+#scam-description{
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;;
+    margin: 15px;
+}
+ #results button {
+    width: auto;
+    padding: 20px;
+    margin: 15px;
+    border: 0px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+ #report {
+    background-color: rgb(159, 193, 255);
+ }
+ #report:hover { 
+     background-color: rgb(128, 156, 208);
+ }
+
+ #cancel {
+    background-color: rgb(204, 68, 68);
+    color: white;
+}
+
+#cancel:hover {
+    background-color: rgb(140, 37, 37)
+}
+
+@media (max-width: 768px) {
+    #results {
+        flex-direction: column;  
+        gap: 10px;
+    }
+    #results button {
+    width: auto;
+    padding: 20px;
+    border: 0px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+     #cancel {
+    background-color: rgb(204, 68, 68);
+    color: white;
+}
+
+#cancel:hover {
+    background-color: rgb(140, 37, 37)
+}
+
+    }
+
+#results h2 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#confcat {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+#results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#analyzed {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px;
+    flex-direction: column;
+}
+
+
+
+#key {
+    font-style: italic;
+    color: rgb(91, 91, 91);
+}
+
+.navbar {
+    background-color: rgb(143, 238, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    border-radius: 100px;
+    padding: 30px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.nav-links a{
+    padding: 20px;
+    width: 150px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(76, 195, 255);
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+    margin: 10px;
+}
+@media (max-width: 768px) {
+    .navbar {
+        gap: 10px;  
+        flex-direction: column;  
+        padding: 15px;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        padding: 0px;
+    }
+    
+    .nav-links {
+        gap: 50px; 
+        flex-direction: row;  
+        width: 100%;
+        align-self: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .nav-links a {
+        width: 75%; 
+        text-align: center;
+    }
+}
